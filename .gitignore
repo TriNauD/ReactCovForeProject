@@ -1,0 +1,167 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+# Android
+# Built application 文件
+*.apk
+*.ap_
+
+# ART/Dalvik VM 文件
+*.dex
+
+# Java class 文件
+*.class
+
+# Generated 文件夹
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# 本地配置文件 (sdk path, etc)
+local.properties
+
+# Eclipse生成的Proguard文件夹
+proguard/
+
+# 日志文件
+*.log
+
+# Android Studio导航编辑器临时文件
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ (IDE配置文件)
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+
+# 密钥储存库文件
+# 如果您不想检查密钥库文件，请取消注释以下行
+#*.jks
+
+# 在Android Studio 2.2及更高版本中生成的外部原生构建文件夹
+.externalNativeBuild
+
+# Google服务 (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline (Android 平台上的秒级编译方案)
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane (自动化打包框架)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# React
+.DS_STORE
+node_modules
+scripts/flow/*/.flowconfig
+.flowconfig
+*~
+*.pyc
+.grunt
+_SpecRunner.html
+__benchmarks__
+build/
+build2/
+remote-repo/
+coverage/
+.module-cache
+fixtures/dom/public/react-dom.js
+fixtures/dom/public/react.js
+test/the-files-to-test.generated.js
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
+*.swp
+*.swo
+
+packages/react-devtools-core/dist
+packages/react-devtools-extensions/chrome/build
+packages/react-devtools-extensions/chrome/*.crx
+packages/react-devtools-extensions/chrome/*.pem
+packages/react-devtools-extensions/firefox/build
+packages/react-devtools-extensions/firefox/*.xpi
+packages/react-devtools-extensions/firefox/*.pem
+packages/react-devtools-extensions/shared/build
+packages/react-devtools-extensions/.tempUserDataDir
+packages/react-devtools-inline/dist
+packages/react-devtools-shell/dist
+packages/react-devtools-scheduling-profiler/dist
