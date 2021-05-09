@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Button, Text, View, TouchableOpacity} from 'react-native';
-import IconBig from '../component/IconBig';
 import SectionBig from '../component/SectionBig';
 
 export default class MainPage extends Component {
