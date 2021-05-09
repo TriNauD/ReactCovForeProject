@@ -23,6 +23,7 @@ class SectionBig extends Component {
           borderRadius: 10,
           elevation: 4,
           flexDirection: 'row',
+          marginBottom: 15,
         }}>
         <View
           style={{
