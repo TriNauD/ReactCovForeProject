@@ -16,7 +16,7 @@ export default class DataShowPage extends Component {
           borderRadius: 10,
           elevation: 4,
         }}>
-        <TitleText />
+        <TitleText title={'疫情数据'} subTitle={'（截止到3月14日09时）'}/>
         <View
           style={{
             flex: 1,
