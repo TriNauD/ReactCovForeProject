@@ -41,6 +41,7 @@ class SectionBig extends Component {
         </View>
         <View
           style={{
+            width: 200,
             flexDirection: 'column',
             alignItems: 'flex-start',
             justifyContent: 'center',
