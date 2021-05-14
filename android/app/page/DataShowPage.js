@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
-import NumBar from '../component/NumBar';
-import LineChart from '../component/LineChart';
 import TitleText from '../component/TitleText';
+import NumBar from '../component/NumBar';
+import ELineChart from '../component/ELineChart';
 
 export default class DataShowPage extends Component {
   render() {
@@ -14,7 +14,6 @@ export default class DataShowPage extends Component {
           overflow: 'hidden',
           backgroundColor: '#FFFFFF',
           borderRadius: 10,
-          elevation: 4,
         }}>
         <TitleText title={'疫情数据'} subTitle={'（截止到3月14日09时）'}/>
         <View
@@ -24,7 +23,7 @@ export default class DataShowPage extends Component {
             alignItems: 'center',
           }}>
           <NumBar />
-          <LineChart />
+          <ELineChart width={350} height={115}/>
         </View>
       </View>
     );
