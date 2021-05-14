@@ -8,15 +8,17 @@
 
 import 'react-native-gesture-handler';
 import React, {Component} from 'react';
+import {Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Text, View} from 'react-native';
+import Icon from 'react-native-vector-icons/AntDesign';
 import MainPage from './android/app/page/MainPage';
 import DataShowPage from './android/app/page/DataShowPage';
 import ForecastPage from './android/app/page/ForecastPage';
 import CreateForecastPage from './android/app/page/CreateForecastPage';
 import ModelManagePage from './android/app/page/ModelManagePage';
+import CreateModelPage from './android/app/page/CreateModelPage';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -42,12 +44,17 @@ function HomeScreen() {
       <Stack.Screen
         name="CreateForecastPage"
         component={CreateForecastPage}
-        options={{title: '新建预测',headerTitleAlign: 'center'}}
+        options={{title: '新建预测', headerTitleAlign: 'center'}}
       />
       <Stack.Screen
         name="ModelManagePage"
         component={ModelManagePage}
-        options={{title: '模型管理',headerTitleAlign: 'center'}}
+        options={{title: '模型管理', headerTitleAlign: 'center'}}
+      />
+      <Stack.Screen
+        name="CreateModelPage"
+        component={CreateModelPage}
+        options={{title: '新建模型', headerTitleAlign: 'center'}}
       />
     </Stack.Navigator>
   );
@@ -66,7 +73,7 @@ function App() {
     <NavigationContainer>
       <Tab.Navigator
         tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: '#2D77F9',
           inactiveTintColor: 'gray',
           tabStyle: {
             backgroundColor: '#ddd',
@@ -75,8 +82,8 @@ function App() {
             borderRightColor: '#fff',
           },
         }}>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Login" component={UserScreen} />
+        <Tab.Screen name="首页" component={HomeScreen} />
+        <Tab.Screen name="我的" component={UserScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
