@@ -2,10 +2,10 @@ import React, {Component, PropTypes} from 'react';
 import {View, Image} from 'react-native';
 class IconBig extends Component {
   static defaultProps = {
-    backgroundColor: '#66ccff',
     size: 100,
-    iconSize: 60,
     icon: require('../res/icon/file-add.png'),
+    iconSize: 60,
+    iconBackgroundColor: '#66ccff',
   };
   render() {
     const {backgroundColor, size, icon} = this.props;
@@ -15,7 +15,7 @@ class IconBig extends Component {
           height: this.props.size,
           width: this.props.size,
           borderRadius: 2 * this.props.size,
-          backgroundColor: this.props.backgroundColor,
+          backgroundColor: this.props.iconBackgroundColor,
           alignItems: 'center',
           justifyContent: 'center',
         }}>

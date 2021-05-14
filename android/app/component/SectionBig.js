@@ -34,9 +34,9 @@ class SectionBig extends Component {
           }}>
           <IconBig
             size={75}
+            icon={this.props.icon}
             iconSize={35}
-            backgroundColor={'rgba(98, 212, 166, 100)'}
-            icon={require('../res/icon/file-add.png')}
+            iconBackgroundColor={this.props.iconColor}
           />
         </View>
         <View
