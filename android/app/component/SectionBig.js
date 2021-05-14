@@ -7,23 +7,22 @@ class SectionBig extends Component {
     height: 115,
     width: 350,
     icon: require('../res/icon/file-add.png'),
-    iconSize: 100,
     iconColor: '#66ccff',
     title: 'title',
     detail: 'detail',
   };
   render() {
-    const {backgroundColor, size, source} = this.props;
+    const {height, width, icon, iconColor, title, detail} = this.props;
     return (
       <View
         style={{
+          marginBottom: 15,
+          elevation: 6,
           width: this.props.width,
           height: this.props.height,
           backgroundColor: '#FFFFFF',
           borderRadius: 10,
-          elevation: 4,
           flexDirection: 'row',
-          marginBottom: 15,
         }}>
         <View
           style={{
