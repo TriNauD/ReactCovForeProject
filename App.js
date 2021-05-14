@@ -24,11 +24,31 @@ const Tab = createBottomTabNavigator();
 function HomeScreen() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="MainPage" component={MainPage} />
-      <Stack.Screen name="DataShowPage" component={DataShowPage} />
-      <Stack.Screen name="ForecastPage" component={ForecastPage} />
-      <Stack.Screen name="CreateForecastPage" component={CreateForecastPage} />
-      <Stack.Screen name="ModelManagePage" component={ModelManagePage} />
+      <Stack.Screen
+        name="MainPage"
+        component={MainPage}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="DataShowPage"
+        component={DataShowPage}
+        options={{title: '疫情数据展示', headerTitleAlign: 'center'}}
+      />
+      <Stack.Screen
+        name="ForecastPage"
+        component={ForecastPage}
+        options={{title: '疫情预测', headerTitleAlign: 'center'}}
+      />
+      <Stack.Screen
+        name="CreateForecastPage"
+        component={CreateForecastPage}
+        options={{title: '新建预测',headerTitleAlign: 'center'}}
+      />
+      <Stack.Screen
+        name="ModelManagePage"
+        component={ModelManagePage}
+        options={{title: '模型管理',headerTitleAlign: 'center'}}
+      />
     </Stack.Navigator>
   );
 }
