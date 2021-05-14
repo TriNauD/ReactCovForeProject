@@ -4,6 +4,7 @@ import {View, Text} from 'react-native';
 class NumSquare extends Component {
   static defaultProps = {
     title: 'title',
+    num: '10000',
     numColor: '#FFFFFF',
   };
   render() {
@@ -25,7 +26,7 @@ class NumSquare extends Component {
             fontSize: 20,
             color: this.props.numColor,
           }}>
-          Number
+          {this.props.num}
         </Text>
         <Text
           style={{
